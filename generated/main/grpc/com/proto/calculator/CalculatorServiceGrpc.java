@@ -18,141 +18,109 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.14.0)",
-    comments = "Source: calculator.proto")
+    value = "by gRPC proto compiler (version 1.21.0)",
+    comments = "Source: table.proto")
 public final class CalculatorServiceGrpc {
 
   private CalculatorServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "calculator.CalculatorService";
+  public static final String SERVICE_NAME = "ayush.CalculatorService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorResponse> getSquareMethod;
+  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.tableRequest,
+      com.proto.calculator.tableResponse> getTablesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Square",
-      requestType = com.proto.calculator.CalculatorRequest.class,
-      responseType = com.proto.calculator.CalculatorResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "tables",
+      requestType = com.proto.calculator.tableRequest.class,
+      responseType = com.proto.calculator.tableResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorResponse> getSquareMethod() {
-    io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorResponse> getSquareMethod;
-    if ((getSquareMethod = CalculatorServiceGrpc.getSquareMethod) == null) {
+  public static io.grpc.MethodDescriptor<com.proto.calculator.tableRequest,
+      com.proto.calculator.tableResponse> getTablesMethod() {
+    io.grpc.MethodDescriptor<com.proto.calculator.tableRequest, com.proto.calculator.tableResponse> getTablesMethod;
+    if ((getTablesMethod = CalculatorServiceGrpc.getTablesMethod) == null) {
       synchronized (CalculatorServiceGrpc.class) {
-        if ((getSquareMethod = CalculatorServiceGrpc.getSquareMethod) == null) {
-          CalculatorServiceGrpc.getSquareMethod = getSquareMethod = 
-              io.grpc.MethodDescriptor.<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorResponse>newBuilder()
+        if ((getTablesMethod = CalculatorServiceGrpc.getTablesMethod) == null) {
+          CalculatorServiceGrpc.getTablesMethod = getTablesMethod = 
+              io.grpc.MethodDescriptor.<com.proto.calculator.tableRequest, com.proto.calculator.tableResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "calculator.CalculatorService", "Square"))
+                  "ayush.CalculatorService", "tables"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorRequest.getDefaultInstance()))
+                  com.proto.calculator.tableRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("Square"))
+                  com.proto.calculator.tableResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("tables"))
                   .build();
           }
         }
      }
-     return getSquareMethod;
+     return getTablesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorResponse> getPrimeFactorsMethod;
+  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.greetingsRequest,
+      com.proto.calculator.greetingsResponse> getGreetMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "PrimeFactors",
-      requestType = com.proto.calculator.CalculatorRequest.class,
-      responseType = com.proto.calculator.CalculatorResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorResponse> getPrimeFactorsMethod() {
-    io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorResponse> getPrimeFactorsMethod;
-    if ((getPrimeFactorsMethod = CalculatorServiceGrpc.getPrimeFactorsMethod) == null) {
+      fullMethodName = SERVICE_NAME + '/' + "greet",
+      requestType = com.proto.calculator.greetingsRequest.class,
+      responseType = com.proto.calculator.greetingsResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.proto.calculator.greetingsRequest,
+      com.proto.calculator.greetingsResponse> getGreetMethod() {
+    io.grpc.MethodDescriptor<com.proto.calculator.greetingsRequest, com.proto.calculator.greetingsResponse> getGreetMethod;
+    if ((getGreetMethod = CalculatorServiceGrpc.getGreetMethod) == null) {
       synchronized (CalculatorServiceGrpc.class) {
-        if ((getPrimeFactorsMethod = CalculatorServiceGrpc.getPrimeFactorsMethod) == null) {
-          CalculatorServiceGrpc.getPrimeFactorsMethod = getPrimeFactorsMethod = 
-              io.grpc.MethodDescriptor.<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+        if ((getGreetMethod = CalculatorServiceGrpc.getGreetMethod) == null) {
+          CalculatorServiceGrpc.getGreetMethod = getGreetMethod = 
+              io.grpc.MethodDescriptor.<com.proto.calculator.greetingsRequest, com.proto.calculator.greetingsResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "calculator.CalculatorService", "PrimeFactors"))
+                  "ayush.CalculatorService", "greet"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorRequest.getDefaultInstance()))
+                  com.proto.calculator.greetingsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("PrimeFactors"))
+                  com.proto.calculator.greetingsResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("greet"))
                   .build();
           }
         }
      }
-     return getPrimeFactorsMethod;
+     return getGreetMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorAverageResponse> getAverageMethod;
+  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.tableRequest,
+      com.proto.calculator.divisorResponse> getGCDMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "Average",
-      requestType = com.proto.calculator.CalculatorRequest.class,
-      responseType = com.proto.calculator.CalculatorAverageResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorAverageResponse> getAverageMethod() {
-    io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorAverageResponse> getAverageMethod;
-    if ((getAverageMethod = CalculatorServiceGrpc.getAverageMethod) == null) {
-      synchronized (CalculatorServiceGrpc.class) {
-        if ((getAverageMethod = CalculatorServiceGrpc.getAverageMethod) == null) {
-          CalculatorServiceGrpc.getAverageMethod = getAverageMethod = 
-              io.grpc.MethodDescriptor.<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorAverageResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-              .setFullMethodName(generateFullMethodName(
-                  "calculator.CalculatorService", "Average"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorAverageResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("Average"))
-                  .build();
-          }
-        }
-     }
-     return getAverageMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorOddEvenResponse> getOddEvenMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "OddEven",
-      requestType = com.proto.calculator.CalculatorRequest.class,
-      responseType = com.proto.calculator.CalculatorOddEvenResponse.class,
+      fullMethodName = SERVICE_NAME + '/' + "GCD",
+      requestType = com.proto.calculator.tableRequest.class,
+      responseType = com.proto.calculator.divisorResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
-  public static io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest,
-      com.proto.calculator.CalculatorOddEvenResponse> getOddEvenMethod() {
-    io.grpc.MethodDescriptor<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorOddEvenResponse> getOddEvenMethod;
-    if ((getOddEvenMethod = CalculatorServiceGrpc.getOddEvenMethod) == null) {
+  public static io.grpc.MethodDescriptor<com.proto.calculator.tableRequest,
+      com.proto.calculator.divisorResponse> getGCDMethod() {
+    io.grpc.MethodDescriptor<com.proto.calculator.tableRequest, com.proto.calculator.divisorResponse> getGCDMethod;
+    if ((getGCDMethod = CalculatorServiceGrpc.getGCDMethod) == null) {
       synchronized (CalculatorServiceGrpc.class) {
-        if ((getOddEvenMethod = CalculatorServiceGrpc.getOddEvenMethod) == null) {
-          CalculatorServiceGrpc.getOddEvenMethod = getOddEvenMethod = 
-              io.grpc.MethodDescriptor.<com.proto.calculator.CalculatorRequest, com.proto.calculator.CalculatorOddEvenResponse>newBuilder()
+        if ((getGCDMethod = CalculatorServiceGrpc.getGCDMethod) == null) {
+          CalculatorServiceGrpc.getGCDMethod = getGCDMethod = 
+              io.grpc.MethodDescriptor.<com.proto.calculator.tableRequest, com.proto.calculator.divisorResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "calculator.CalculatorService", "OddEven"))
+                  "ayush.CalculatorService", "GCD"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorRequest.getDefaultInstance()))
+                  com.proto.calculator.tableRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.proto.calculator.CalculatorOddEvenResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("OddEven"))
+                  com.proto.calculator.divisorResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("GCD"))
                   .build();
           }
         }
      }
-     return getOddEvenMethod;
+     return getGCDMethod;
   }
 
   /**
@@ -187,29 +155,16 @@ public final class CalculatorServiceGrpc {
      * Unary
      * </pre>
      */
-    public void square(com.proto.calculator.CalculatorRequest request,
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getSquareMethod(), responseObserver);
+    public void tables(com.proto.calculator.tableRequest request,
+        io.grpc.stub.StreamObserver<com.proto.calculator.tableResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTablesMethod(), responseObserver);
     }
 
     /**
-     * <pre>
-     * Server Streaming
-     * </pre>
      */
-    public void primeFactors(com.proto.calculator.CalculatorRequest request,
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getPrimeFactorsMethod(), responseObserver);
-    }
-
-    /**
-     * <pre>
-     * Client Streaming
-     * </pre>
-     */
-    public io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorRequest> average(
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorAverageResponse> responseObserver) {
-      return asyncUnimplementedStreamingCall(getAverageMethod(), responseObserver);
+    public void greet(com.proto.calculator.greetingsRequest request,
+        io.grpc.stub.StreamObserver<com.proto.calculator.greetingsResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getGreetMethod(), responseObserver);
     }
 
     /**
@@ -217,41 +172,34 @@ public final class CalculatorServiceGrpc {
      * BiDirectional Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorRequest> oddEven(
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorOddEvenResponse> responseObserver) {
-      return asyncUnimplementedStreamingCall(getOddEvenMethod(), responseObserver);
+    public io.grpc.stub.StreamObserver<com.proto.calculator.tableRequest> gCD(
+        io.grpc.stub.StreamObserver<com.proto.calculator.divisorResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getGCDMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getSquareMethod(),
+            getTablesMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.proto.calculator.CalculatorRequest,
-                com.proto.calculator.CalculatorResponse>(
-                  this, METHODID_SQUARE)))
+                com.proto.calculator.tableRequest,
+                com.proto.calculator.tableResponse>(
+                  this, METHODID_TABLES)))
           .addMethod(
-            getPrimeFactorsMethod(),
-            asyncServerStreamingCall(
+            getGreetMethod(),
+            asyncUnaryCall(
               new MethodHandlers<
-                com.proto.calculator.CalculatorRequest,
-                com.proto.calculator.CalculatorResponse>(
-                  this, METHODID_PRIME_FACTORS)))
+                com.proto.calculator.greetingsRequest,
+                com.proto.calculator.greetingsResponse>(
+                  this, METHODID_GREET)))
           .addMethod(
-            getAverageMethod(),
-            asyncClientStreamingCall(
-              new MethodHandlers<
-                com.proto.calculator.CalculatorRequest,
-                com.proto.calculator.CalculatorAverageResponse>(
-                  this, METHODID_AVERAGE)))
-          .addMethod(
-            getOddEvenMethod(),
+            getGCDMethod(),
             asyncBidiStreamingCall(
               new MethodHandlers<
-                com.proto.calculator.CalculatorRequest,
-                com.proto.calculator.CalculatorOddEvenResponse>(
-                  this, METHODID_ODD_EVEN)))
+                com.proto.calculator.tableRequest,
+                com.proto.calculator.divisorResponse>(
+                  this, METHODID_GCD)))
           .build();
     }
   }
@@ -279,32 +227,18 @@ public final class CalculatorServiceGrpc {
      * Unary
      * </pre>
      */
-    public void square(com.proto.calculator.CalculatorRequest request,
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse> responseObserver) {
+    public void tables(com.proto.calculator.tableRequest request,
+        io.grpc.stub.StreamObserver<com.proto.calculator.tableResponse> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSquareMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getTablesMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
-     * <pre>
-     * Server Streaming
-     * </pre>
      */
-    public void primeFactors(com.proto.calculator.CalculatorRequest request,
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse> responseObserver) {
-      asyncServerStreamingCall(
-          getChannel().newCall(getPrimeFactorsMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     * <pre>
-     * Client Streaming
-     * </pre>
-     */
-    public io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorRequest> average(
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorAverageResponse> responseObserver) {
-      return asyncClientStreamingCall(
-          getChannel().newCall(getAverageMethod(), getCallOptions()), responseObserver);
+    public void greet(com.proto.calculator.greetingsRequest request,
+        io.grpc.stub.StreamObserver<com.proto.calculator.greetingsResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getGreetMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -312,10 +246,10 @@ public final class CalculatorServiceGrpc {
      * BiDirectional Streaming
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorRequest> oddEven(
-        io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorOddEvenResponse> responseObserver) {
+    public io.grpc.stub.StreamObserver<com.proto.calculator.tableRequest> gCD(
+        io.grpc.stub.StreamObserver<com.proto.calculator.divisorResponse> responseObserver) {
       return asyncBidiStreamingCall(
-          getChannel().newCall(getOddEvenMethod(), getCallOptions()), responseObserver);
+          getChannel().newCall(getGCDMethod(), getCallOptions()), responseObserver);
     }
   }
 
@@ -342,20 +276,16 @@ public final class CalculatorServiceGrpc {
      * Unary
      * </pre>
      */
-    public com.proto.calculator.CalculatorResponse square(com.proto.calculator.CalculatorRequest request) {
+    public com.proto.calculator.tableResponse tables(com.proto.calculator.tableRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSquareMethod(), getCallOptions(), request);
+          getChannel(), getTablesMethod(), getCallOptions(), request);
     }
 
     /**
-     * <pre>
-     * Server Streaming
-     * </pre>
      */
-    public java.util.Iterator<com.proto.calculator.CalculatorResponse> primeFactors(
-        com.proto.calculator.CalculatorRequest request) {
-      return blockingServerStreamingCall(
-          getChannel(), getPrimeFactorsMethod(), getCallOptions(), request);
+    public com.proto.calculator.greetingsResponse greet(com.proto.calculator.greetingsRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getGreetMethod(), getCallOptions(), request);
     }
   }
 
@@ -382,17 +312,24 @@ public final class CalculatorServiceGrpc {
      * Unary
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.CalculatorResponse> square(
-        com.proto.calculator.CalculatorRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.tableResponse> tables(
+        com.proto.calculator.tableRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSquareMethod(), getCallOptions()), request);
+          getChannel().newCall(getTablesMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.proto.calculator.greetingsResponse> greet(
+        com.proto.calculator.greetingsRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getGreetMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_SQUARE = 0;
-  private static final int METHODID_PRIME_FACTORS = 1;
-  private static final int METHODID_AVERAGE = 2;
-  private static final int METHODID_ODD_EVEN = 3;
+  private static final int METHODID_TABLES = 0;
+  private static final int METHODID_GREET = 1;
+  private static final int METHODID_GCD = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -411,13 +348,13 @@ public final class CalculatorServiceGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_SQUARE:
-          serviceImpl.square((com.proto.calculator.CalculatorRequest) request,
-              (io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse>) responseObserver);
+        case METHODID_TABLES:
+          serviceImpl.tables((com.proto.calculator.tableRequest) request,
+              (io.grpc.stub.StreamObserver<com.proto.calculator.tableResponse>) responseObserver);
           break;
-        case METHODID_PRIME_FACTORS:
-          serviceImpl.primeFactors((com.proto.calculator.CalculatorRequest) request,
-              (io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorResponse>) responseObserver);
+        case METHODID_GREET:
+          serviceImpl.greet((com.proto.calculator.greetingsRequest) request,
+              (io.grpc.stub.StreamObserver<com.proto.calculator.greetingsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -429,12 +366,9 @@ public final class CalculatorServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_AVERAGE:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.average(
-              (io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorAverageResponse>) responseObserver);
-        case METHODID_ODD_EVEN:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.oddEven(
-              (io.grpc.stub.StreamObserver<com.proto.calculator.CalculatorOddEvenResponse>) responseObserver);
+        case METHODID_GCD:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.gCD(
+              (io.grpc.stub.StreamObserver<com.proto.calculator.divisorResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -447,7 +381,7 @@ public final class CalculatorServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.proto.calculator.Calculator.getDescriptor();
+      return com.proto.calculator.Table.getDescriptor();
     }
 
     @java.lang.Override
@@ -486,10 +420,9 @@ public final class CalculatorServiceGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new CalculatorServiceFileDescriptorSupplier())
-              .addMethod(getSquareMethod())
-              .addMethod(getPrimeFactorsMethod())
-              .addMethod(getAverageMethod())
-              .addMethod(getOddEvenMethod())
+              .addMethod(getTablesMethod())
+              .addMethod(getGreetMethod())
+              .addMethod(getGCDMethod())
               .build();
         }
       }
